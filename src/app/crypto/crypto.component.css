@@ -1,0 +1,28 @@
+.crypto-info, .quote-info {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  .ticker-info {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .info-block {
+    display: flex;
+    align-items: center;
+  }
+  
+  .crypto-image, .quote-image {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  h2, h3 {
+    margin: 0 0 10px;
+  }
+  

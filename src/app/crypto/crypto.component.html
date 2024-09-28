@@ -1,0 +1,34 @@
+<div class="crypto-info">
+    <div class="info-block">
+      <img [src]="crypto.image" alt="{{ crypto.nameFull }}" class="crypto-image" />
+      <div>
+        <h2>{{ crypto.nameFull }} ({{ crypto.name }})</h2>
+        <p>Market Cap Rank: {{ crypto.marketCapRank }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="quote-info">
+    <div class="info-block">
+      <img [src]="mainQuote.image" alt="{{ mainQuote.nameFull }}" class="quote-image" />
+      <div>
+        <h3>Quote Currency: {{ mainQuote.nameFull }} ({{ mainQuote.name }})</h3>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="ticker-info">
+    <div>
+        <app-price-chart [prices]="prices"></app-price-chart>
+    </div>
+    <h3>Ticker Info</h3>
+    <p>Symbol: {{ ticker.symbol }}</p>
+    <p>Last Price: {{ ticker.lastPrice }}</p>
+    <p>24h Price Change: {{ ticker.priceChange }} ({{ ticker.priceChangePercent }}%)</p>
+    <p>Open Price: {{ ticker.openPrice }}</p>
+    <p>High Price: {{ ticker.highPrice }}</p>
+    <p>Low Price: {{ ticker.lowPrice }}</p>
+
+  </div>
+  
